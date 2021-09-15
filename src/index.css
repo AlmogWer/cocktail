@@ -234,13 +234,13 @@ Cocktail
 */
 
 .cocktail {
-  background: var(--mainWhite);
+  background: rgba(255, 255, 255, 0.658);
   margin-bottom: 2rem;
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
   display: grid;
   grid-template-rows: auto 1fr;
-  border-radius: var(--mainBorderRadius);
+  border-radius: 2rem;
 }
 .cocktail:hover {
   box-shadow: var(--darkShadow);
@@ -248,8 +248,8 @@ Cocktail
 .cocktail img {
   height: 20rem;
   object-fit: cover;
-  border-top-left-radius: var(--mainBorderRadius);
-  border-top-right-radius: var(--mainBorderRadius);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 .cocktail-footer {
   padding: 1.5rem;
@@ -280,10 +280,10 @@ Form
   width: var(--smallWidth);
   margin: 0 auto;
   max-width: var(--maxWidth);
-  background: var(--mainWhite);
+  background: rgba(255, 255, 255, 0.527);
   padding: 2rem 2.5rem;
   text-transform: capitalize;
-  border-radius: var(--mainBorderRadius);
+  border-radius: 1rem;
   box-shadow: var(--lightShadow);
 }
 
@@ -293,15 +293,20 @@ Form
   font-weight: bold;
   letter-spacing: 0.25rem;
   color: var(--primaryColor);
+  text-align: center;
+  font-size: 1.5rem;
 }
 .form-control input {
   width: 100%;
   border: none;
   border-color: transparent;
-  background: var(--mainBackground);
-  border-radius: var(--mainBorderRadius);
+  background: var(--primaryLightColor);
+  border-radius: 1rem;
   padding: 0.5rem;
   font-size: 1.2rem;
+}
+.form-control input:focus {
+  outline: none;
 }
 /* 
 ====== 
