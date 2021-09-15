@@ -322,10 +322,18 @@ Cocktail
   max-width: var(--fullWidth);
   margin: 0 auto;
   text-align: left;
+  color: #222;
 }
 .drink img {
-  border-radius: var(--mainBorderRadius);
+  border-radius: 1rem;
 }
+.drink img::after {
+  content: "";
+  min-height: 500px;
+  min-width: 500px;
+  background-color: black;
+}
+
 .drink p {
   font-weight: bold;
   text-transform: capitalize;
@@ -335,10 +343,10 @@ Cocktail
   margin-right: 0.5rem;
 }
 .drink-data {
-  background: var(--primaryLightColor);
+  background: #e2b1a0;
   padding: 0.25rem 0.5rem;
   border-radius: var(--mainBorderRadius);
-  color: var(--primaryColor);
+  color: rgb(61, 61, 61);
 }
 .drink-info {
   padding-top: 2rem;
